@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment { 
 	    DOCKER_USERNAME =  'markayraph'
-	    GITHUB_REPO_URL =  'https://github.com/goreges/dockercred1'  }
+	    GITHUB_REPO_URL =  'https://github.com/goreges/calculator'  }
 
     tools {
         maven 'maven' 
