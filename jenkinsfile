@@ -5,7 +5,7 @@ pipeline {
 	    GITHUB_REPO_URL =  'https://github.com/goreges/dockercred1'  }
 
     tools {
-        maven 'Maven-3.9.8' 
+        maven 'maven' 
     }
 
     stages {
