@@ -30,7 +30,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build("${env.DOCKER_USERNAME}/dockercred1:${env.BUILD_NUMBER}", '.')
+                    docker.build("${env.DOCKER_USERNAME}/calculator:${env.BUILD_NUMBER}", '.')
                 }
             }
         }
@@ -39,7 +39,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-                        docker.image("${env.DOCKER_USERNAME}/dockercred1:${env.BUILD_NUMBER}").push()
+                        docker.image("${env.DOCKER_USERNAME}/calculator:${env.BUILD_NUMBER}").push()
                     }
                 }
             }
