@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment { 
-	    DOCKER_USERNAME =  'goreges'
+	    DOCKER_USERNAME =  'markayraph'
 	    GITHUB_REPO_URL =  'https://github.com/goreges/dockercred1'  }
 
     tools {
